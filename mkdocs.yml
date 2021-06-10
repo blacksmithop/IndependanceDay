@@ -1,5 +1,6 @@
 site_name: Full Stack
-
+site_url: ''
+use_directory_urls: False
 theme:
   language: en
   name: material
@@ -27,6 +28,7 @@ plugins:
   - search
 
 markdown_extensions:
+  - attr_list
   - pymdownx.highlight:
       linenums: true
   - pymdownx.superfences
@@ -38,5 +40,9 @@ markdown_extensions:
 repo_url: https://gitlab.com/blacksmithop/full-stack-certification
 repo_name: FSD
 edit_uri: ""
+
+extra_css:
+  - stylesheets/extra.css
+
 
 copyright: Copyright &copy; 2021 BlackSmithOP 

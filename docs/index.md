@@ -1,3 +1,5 @@
 # Challenges
 
-1. [Week 1](https://codepen.io/blacksmithop/pen/poeKdvy)
+[](https://codepen.io/blacksmithop/pen/poeKdvy){: .file-icon data-type='Week-1' }
+
+
