@@ -1,7 +1,6 @@
 pages:
   stage: deploy
   script:
-  - cd site
   - mkdir .public
   - cp -r * .public
   - mv .public public
