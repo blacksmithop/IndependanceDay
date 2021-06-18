@@ -25,3 +25,20 @@ p {
     height: 500px;
     width: 300px
 }
+
+@media screen and (max-width: 640px) {
+	.carousel{width: 50%;}
+
+    .carousel-item img {
+        height: 40%;
+        width: 40%;
+    }
+
+    .display-2 {
+        font-size: 30px;
+    }
+	
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+	.main-content{width: 70%;}
+}
