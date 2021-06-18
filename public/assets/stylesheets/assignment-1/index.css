@@ -9,6 +9,7 @@ body {
 
 p {
     color: white;
+    margin-top: 10px;
 }
 
 
@@ -20,6 +21,7 @@ p {
 
 
 .carousel-item img {
+    margin-top: 45px;
     height: 500px;
     width: 300px
 }
