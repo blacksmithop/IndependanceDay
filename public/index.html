@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>FSD Challenges</title>
-    <link rel="stylesheet" href="./assets/stylesheets/index.css">
-    <script src="./assets/javascripts/index.js" async></script>
 
-  </head>
-  <body class="directory">
-    <input id="search" type="text" placeholder="Search" autocomplete="off" />
-    <div id="wrapper">
-      <h1><a href="/">~</a> / <a href="https://gitlab.com/blacksmithop/full-stack-certification">Home</a> /</h1>
-      <ul id="files" class="view-tiles">
-        <!--files-->
-        <li><a href="/public/pages/week1" class="icon icon-directory" title="Week-1"><span class="name">Week-1</span><span class="size"></span><span class="date">18/6/2021 8:56:51 pm</span></a></li>
-        <li><a href="/public/pages/assmt1" class="icon icon-directory" title="Assignment-1"><span class="name">Assignment-1</span><span class="size"></span><span class="date">18/6/2021 12:40:26 pm</span></a></li></ul>
-        <!--file end-->
-    </div>
-  </body>
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>FSD Challenges</title>
+  <link rel="stylesheet" href="./assets/stylesheets/index.css">
+  <script src="./assets/javascripts/index.js"></script>
+  <script>
+    $(window).on('content loaded', function () {
+      $('search').on('keyup', search);
+    });
+  </script>
+</head>
+
+<body class="directory">
+  <input id="search" type="text" placeholder="Search" autocomplete="off" />
+  <div id="wrapper">
+    <h1><a href="/">~</a> / <a href="https://gitlab.com/blacksmithop/full-stack-certification">Home</a> /</h1>
+    <ul id="files" class="view-tiles">
+      <!--files-->
+      <li><a href="/public/pages/week1" class="icon icon-directory" title="Week-1"><span class="name">Week-1</span><span
+            class="size"></span><span class="date">18/6/2021 8:56:51 pm</span></a></li>
+      <li><a href="/public/pages/assmt1" class="icon icon-directory" title="Assignment-1"><span
+            class="name">Assignment-1</span><span class="size"></span><span class="date">18/6/2021 12:40:26
+            pm</span></a></li>
+    </ul>
+    <!--file end-->
+  </div>
+</body>
+
 </html>

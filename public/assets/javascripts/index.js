@@ -59,6 +59,3 @@ function search() {
   });
 }
 
-$(window).on('content loaded', function(){
-  $('search').on('keyup', search);
-});
