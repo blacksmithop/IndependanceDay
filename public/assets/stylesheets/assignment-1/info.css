@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://ik.imagekit.io/otlpjobh3qa/Assmt-1/login_FqoUTJSWx.jpg');
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 .intro {
@@ -10,3 +10,4 @@ body {
 .nav-loc {
     padding-top: 50px;
 }
+

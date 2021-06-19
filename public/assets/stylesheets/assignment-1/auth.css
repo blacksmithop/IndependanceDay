@@ -1,5 +1,6 @@
 
 body {
+	background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%);
     max-width: 100%;
     max-height: 100%;
     position:relative;
