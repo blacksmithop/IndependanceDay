@@ -146,23 +146,32 @@ function validatePassword() {
     const _medium = document.getElementById("medium");
     const _strong = document.getElementById("strong");
 
+    let str = 0;
+
     if (p.value.length <= 7 && (p.value.match(weak) ||
         p.value.match(medium) || p.value.match(strong))) {
-        setAlert(p, "Password is too weak", false);
-        _weak.className = "col bg-danger";
+        str = 1;
     }
     if (p.value.length >= 8 && ((p.value.match(weak) && p.value.match(medium)) ||
         (p.value.match(medium) && p.value.match(strong)) ||
         (p.value.match(weak) && p.value.match(strong)))) {
-        setAlert(p, "Password is moderately strong", false);
-        _medium.className = "col bg-warning";
+        str = 2;
     }
     if (p.value.length >= 10 && p.value.match(weak) &&
         p.value.match(medium) && p.value.match(strong)) {
+        str = 3;
+    }
+    if (str == 1) {
+        setAlert(p, "Password is too weak", false);
+        _weak.className = "col bg-danger";
+    }
+    else if (str == 2) {
+        setAlert(p, "Password is moderately strong", false);
+        _medium.className = "col bg-warning";
+    }
+    else if (str == 3) {
         setAlert(p, "Password is strong", false);
         _strong.className = "col bg-success";
     }
-
-
 }
 
