@@ -1,0 +1,82 @@
+[
+    {
+        "SNo": 1,
+        "Name": "Carrot",
+        "Quantity": 8,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 2,
+        "Name": "Broccoli",
+        "Quantity": 18,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 3,
+        "Name": "Brussel Sprouts",
+        "Quantity": 17,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 4,
+        "Name": "Sweet Potatoes",
+        "Quantity": 12,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 5,
+        "Name": "Mushrooms",
+        "Quantity": 4,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 6,
+        "Name": "Asparagus",
+        "Quantity": 2,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 7,
+        "Name": "Beets",
+        "Quantity": 13,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 8,
+        "Name": "Bell Peppers",
+        "Quantity": 1,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 9,
+        "Name": "Onions",
+        "Quantity": 7,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    },
+    {
+        "SNo": 10,
+        "Name": "Garlic",
+        "Quantity": 6,
+        "Unit": "kg",
+        "Department": "Vegetables",
+        "Notes": "none"
+    }
+]
