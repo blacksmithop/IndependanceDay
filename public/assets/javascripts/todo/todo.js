@@ -4,6 +4,16 @@ var completed = [];
 //
 
 
+$( ".logout" ).click(function() {
+  // log the user out
+  logout(logout);
+});
+
+logout = () => {
+  window.location.href = "index.html"
+}
+
+
 $('.btn').on('hide.bs.dropdown', function (e) {
   if (e.clickEvent) {
     e.preventDefault();
