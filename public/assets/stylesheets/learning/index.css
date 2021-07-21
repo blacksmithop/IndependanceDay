@@ -1,0 +1,39 @@
+.list-group-item {
+    background-color: #f1f9fb;
+    border-top: 1px solid #0091b5;
+    border-left-color: #fff;
+    border-right-color: #fff;
+  }
+  
+  .navbar {
+    position:absolute;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .form-control {
+    font-size:15px;
+  }
+
+  .btn {
+    border-radius:20px;
+    color: #ffffff;
+    background-color: black;
+  }
+  .btn hover{
+
+  }
+
+  .navbar-brand {
+    color: #ffffff;
+  }
+
+  .list-group{
+    display:inline-block;
+    position: relative;
+    top:100px;
+  }
+
+  .list-group-item{
+      font-size: 14px;
+  }
+  
