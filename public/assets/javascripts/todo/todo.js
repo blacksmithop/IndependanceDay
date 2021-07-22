@@ -49,12 +49,12 @@ $(document).on('click', 'label', function (e) {
   let label = this
   let span = $(this).find('span')[0];
   let checkbox = $(this).find('input')[0];
-  console.log(checkbox);
   let item = span.innerHTML;
   let cname = span.className;
   let taskValidate = new Promise(function (resolve, reject) {
     if (cname == "locked"){
       reject("Locked checkbox, ignoring");
+      return false;
     }
 
     if (!(completed.includes(item))){
