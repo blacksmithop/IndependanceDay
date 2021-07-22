@@ -47,7 +47,7 @@ $(document).ready(function () {
 // Keep track of todo - (move to Promises)
 $(document).on('click', 'span', function () {
   let item = this.innerHTML;
-
+  
   let taskValidate = new Promise(function (resolve, reject) {
     let x = 0;
     if (!(completed.includes(item))){
@@ -78,7 +78,7 @@ $(document).on('click', 'span', function () {
 
 function populateTodo() {
   todoArray.forEach(function (todoArr) {
-    var item = `<li><label><input type="checkbox"><i></i><span>${capFirst(todoArr.title)}</span><a href='#'>–</a></label></li>`
+    var item = `<li><label><input type="checkbox" ${todoArr.completed?"checked disabled":""}><i></i><span>${capFirst(todoArr.title)}</span><a href='#'>–</a></label></li>`
     $('.todo').append(item);
   });
 }
