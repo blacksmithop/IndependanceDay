@@ -48,7 +48,8 @@ $(document).ready(function () {
 $(document).on('click', 'label', function (e) {
   let label = this
   let span = $(this).find('span')[0];
-  let checkbox = $(this).find('checkbox')[0];
+  let checkbox = $(this).find('input')[0];
+  console.log(checkbox);
   let item = span.innerHTML;
   let cname = span.className;
   let taskValidate = new Promise(function (resolve, reject) {
