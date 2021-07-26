@@ -26,7 +26,6 @@ app.get('/stats/:username/:platform', async (req, res) => {
     res.json(data)
   })
 
+console.log(`App listening at Port 8080`)
 
-app.listen(3000,"0.0.0.0", () => {
-  console.log(`App listening at Port 3000`)
-})
+app.listen(8080,"0.0.0.0")
