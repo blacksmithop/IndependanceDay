@@ -1,0 +1,29 @@
+{
+  "name": "apex-player-stats",
+  "version": "1.0.0",
+  "description": "fetch api data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/blacksmithop/full-stack-certification.git"
+  },
+  "keywords": [
+    "apex",
+    "legends"
+  ],
+  "author": "BlackSmithOP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/blacksmithop/full-stack-certification/issues"
+  },
+  "homepage": "https://gitlab.com/blacksmithop/full-stack-certification#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}

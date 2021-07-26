@@ -1,0 +1,53 @@
+@font-face {
+  font-family: apexFont;
+  src: url(https://ik.imagekit.io/otlpjobh3qa/Apex_Stat_Tracker/Teko-Medium_UzsQapR_vf.ttf);
+}
+
+body {
+  color: black;
+  font-family: apexFont;
+  background-image: url("https://i.ibb.co/f4gbSq4/apex-bg.jpg");
+}
+
+input[type="text"] {
+  height: 40px;
+  max-width: 300px;
+  font-size: 25px;
+}
+
+.btn {
+  height: 40px;
+}
+
+.alert {
+  display: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background: black;
+}
+
+.fa-steam {
+  color: #c7d5e0;
+}
+
+.fa-playstation {
+  color: #003791;
+}
+
+.fa-xbox {
+  color: white;
+  background: #107c10;
+}
+
+.form-control,
+.btn {
+  border-radius: 25px;
+}
+
+.form-control:focus {
+  border-color: black;
+}
+
+.stat-box { display: none;}
