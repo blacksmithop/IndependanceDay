@@ -6,7 +6,7 @@ $(".btn").click(function () {
 });
 
 async function getPlayerDetails(username, platform) {
-  let URL = `http://localhost:3000/stats/${username}/${platform}`;
+  let URL = `http://23.159.16.235:8080/stats/${username}/${platform}`;
   await axios
     .get(URL)
     .then(function (response) {
