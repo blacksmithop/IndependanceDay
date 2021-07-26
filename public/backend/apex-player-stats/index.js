@@ -27,6 +27,6 @@ app.get('/stats/:username/:platform', async (req, res) => {
   })
 
 
-app.listen(process.env.PORT, () => {
-  console.log(`App listening at http://localhost:3000`)
+app.listen(3000,"0.0.0.0", () => {
+  console.log(`App listening at Port 3000`)
 })
