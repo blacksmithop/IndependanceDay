@@ -1,5 +1,5 @@
 const express = require('express')
-require('dotenv').config()
+//require('dotenv').config()
 const axios = require('axios').default
 const app = express()
 const cors = require('cors');
@@ -48,6 +48,7 @@ app.get('/stats/:username/:platform', async (req, res) => {
     res.json(data)
   })
 
-console.log(`App listening at Port 8080`)
+const port = (process.env.PORT ||3000)
+console.log(`App listening at Port ${port}`)
 
-app.listen(8080,"0.0.0.0")
+app.listen(port,"0.0.0.0")
