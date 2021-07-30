@@ -6,7 +6,7 @@ $(".btn").click(function () {
 });
 
 async function getPlayerDetails(username, platform) {
-  let URL = `https://shielded-escarpment-36078.herokuapp.com/${username}/${platform}`;
+  let URL = `https://shielded-escarpment-36078.herokuapp.com/stats/${username}/${platform}`;
   await axios
     .get(URL)
     .then(function (response) {
