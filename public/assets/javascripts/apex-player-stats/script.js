@@ -13,7 +13,6 @@ async function getPlayerDetails(username, platform) {
       // handle success
       console.log(`Status: ${response.status}`);
       let data = response.data.content;
-    })
     if (!("error" in data)) {
       $(".alert").css("display", "none");
       $(".stat-box").css("display", "none");
@@ -28,6 +27,7 @@ async function getPlayerDetails(username, platform) {
       $(".stat-box").css("display", "none");
       $(".alert").css("display", "inline-block");
     }
+  })
      
 }
 
