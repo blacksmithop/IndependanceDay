@@ -17,6 +17,7 @@ async function getPlayerDetails(username, platform) {
       $(".alert").css("display", "none");
       $(".stat-box").css("display", "none");
       fillPlayerCard(data.global);
+      fillRankedCard(data.global.rank);
     } else {
       $("strong").text(data.error);
       $(".alert").css("display", "inline-block");
@@ -31,13 +32,19 @@ async function getPlayerDetails(username, platform) {
      
 }
 
+function fillRankedCard(data){
+  $(".rank-img").attr("src", data.rankImg);
+  $(".rank").html(`${data.rankName} (${data.rankDiv})`);
+  $(".rank-score").html(data.rankScore);
+}
+
 function fillPlayerCard(data) {
   console.log("Populating player card");
   let hasAvatar = data.avatar == "Not available" || data.avatar == null;
   let src = hasAvatar
     ? "https://i.ibb.co/5R71tmb/placeholderapex.png"
     : data.avatar;
-  $("img").attr("src", src);
+  $(".player-img").attr("src", src);
 
   $(".name").html(data.name);
   $(".level").html(data.level);
