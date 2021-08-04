@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head'); %>
+</head>
+
+<body>
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+    <!--Author data-->
+    <div class="card bg-dark text-light mx-auto mb-3 mt-3" style="max-width: 540px;">
+        <div class="row g-0">
+
+            <% authArray.forEach((author,index)=> { %>
+                <div class="col-md-4">
+                    <img src="img/author/<%= author.imageLink%>" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="fs-4 bg-secondary card-header text-center"><%= author.name%></div>
+                    <div class="card-body">
+                        <ul class="list-group list-group">
+                            <li class="list-group-item">Language: <%=author.language%></li>
+                            <li class="list-group-item">Country: <%=author.country%></li>
+                            <li class="list-group-item">Major work: <%=author.title%></li>
+                          </ul>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+    <div class="footer pt-2 text-center">
+        <%- include('./partials/footer'); %>
+    </div>
+</body>
+
+</html>
