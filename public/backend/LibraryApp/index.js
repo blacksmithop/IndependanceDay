@@ -8,7 +8,6 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', './src/views')
 app.use(express.static(__dirname + '/public'));
-const port = 5000;
 
 var index = express.Router();
 
@@ -27,6 +26,8 @@ app.use(index)
 app.use(auth)
 app.use(author)
 app.use(book)
+
+const port = (process.env.PORT ||3000)
 
 app.listen(port, () => {
     console.log(`Listening to port ${port}`);
